@@ -26,7 +26,7 @@
           | The vitreous body
         p
           | The vitreous body (vitreous body, "glassy", from the Latin vitreus, corresponding to vitr(um) glass + -eus -ous) is the clear gel that fills the space between the lens and the retina of the eyeball of humans and other vertebrates.
-    .section_container.grid
+      img(src="img/eye.png" style="grid-column: 5")
       .text_container
         h2.title
           | Transparencies
@@ -56,15 +56,17 @@
 
   }
   .text_container {
+    padding-bottom: 4rem;
     max-width: 1000px;
     font-size: 1.6rem;
+    grid-column: span 3;
   }
   .section_container {
     padding: 2rem 4rem;
   }
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   #player {
     margin-top: 2rem;
