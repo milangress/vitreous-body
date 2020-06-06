@@ -27,11 +27,18 @@
         p
           | The vitreous body (vitreous body, "glassy", from the Latin vitreus, corresponding to vitr(um) glass + -eus -ous) is the clear gel that fills the space between the lens and the retina of the eyeball of humans and other vertebrates.
       img(src="img/eye.png" style="grid-column: 5")
+    .section_container.video_wrapper
       .text_container
         h2.title
           | Transparencies
         p
           | The 'Point of Vitreous Body' places itself in a post-privacy world. As more and more computerized eyes look at the world like human eyes, it becomes a more relevant ability to hide from these gazes. I propose the thesis that one cannot defend oneself against the x-raying gaze (therefor becoming a "transparent citizen"), but should rather try to become a completely transparent body. The attempt to have more privacy is already hopeless. Therefore resistance should be overcome and absolute transparency should be strived for.
+      video(autoplay="autoplay" class="full_video" loop="loop" muted="muted" playsinline="" src="/videos/Knoten2_VR.mp4.densepose.mp4")
+    .section_container
+      .text_container
+        h2.title
+          | Transparencies
+        p
 </template>
 
 <script>
@@ -61,12 +68,19 @@
     font-size: 1.6rem;
     grid-column: span 3;
   }
+  .fullwidth {
+    grid-column: span 6;
+  }
   .section_container {
     padding: 2rem 4rem;
   }
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .video_wrapper {
+    position: relative;
+    min-height: 100vh;
   }
   #player {
     margin-top: 2rem;
@@ -91,5 +105,14 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+  .full_video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
   }
 </style>
