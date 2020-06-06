@@ -39,8 +39,14 @@
     line-height: 0.9;
     padding-bottom: 0.5em;
   }
+  h2 {
+    font-size: 4rem;
+    line-height: 0.9;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+  }
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .button--green {
