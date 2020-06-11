@@ -48,6 +48,9 @@
   p {
     font-size: 1.5rem;
   }
+  p + p {
+    margin-bottom: 1em;
+  }
 
   .button--green {
     display: inline-block;
